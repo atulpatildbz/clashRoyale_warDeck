@@ -1,0 +1,12 @@
+img {
+    height: 50px;
+}
+#outerButtons
+{
+    width:100%;
+    text-align: center;
+}
+.innerButtons
+{
+    display: inline-block;
+}

@@ -1,0 +1,110 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>War deck</title>
+      </head>
+    <body>
+        <div id="outerButtons">
+            <div class="innerButtons"><button onclick="showCommonsOnly()">Show Commons Only</button></div>
+            <div class="innerButtons"><button onclick="showRaresOnly()">Show Rares Only</button></div>
+            <div class="innerButtons"><button onclick="showEpicsOnly()">Show Epics Only</button></div>
+            <div class="innerButtons"><button onclick="showLegendariesOnly()">Show Legendaries Only</button></div>
+            <div class="innerButtons"><button onclick="showAll()">Show All</button></div>
+        </div>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/mirror.png"><input type="checkbox" class="cards" value="Mirror">0 Mirror<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/skeletons.png"><input type="checkbox" class="cards" value="Skeletons">1 Skeletons<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/snow_spirits.png"><input type="checkbox" class="cards" value="IceSpirit">1 IceSpirit<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/the_log.png"><input type="checkbox" class="cards" value="TheLog">2 TheLog<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/ice_golem.png"><input type="checkbox" class="cards" value="IceGolem">2 IceGolem<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/snowball.png"><input type="checkbox" class="cards" value="GiantSnowball">2 GiantSnowball<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/barb_barrel.png"><input type="checkbox" class="cards" value="BarbarianBarrel">2 BarbarianBarrel<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/goblins.png"><input type="checkbox" class="cards" value="Goblins">2 Goblins<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/zap.png"><input type="checkbox" class="cards" value="Zap">2 Zap<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/rage.png"><input type="checkbox" class="cards" value="Rage">2 Rage<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/bats.png"><input type="checkbox" class="cards" value="Bats">2 Bats<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/fire_spirits.png"><input type="checkbox" class="cards" value="FireSpirits">2 FireSpirits<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/goblin_archer.png"><input type="checkbox" class="cards" value="SpearGoblins">2 SpearGoblins<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/chaos_cannon.png"><input type="checkbox" class="cards" value="Cannon">3 Cannon<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/knight.png"><input type="checkbox" class="cards" value="Knight">3 Knight<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/ghost.png"><input type="checkbox" class="cards" value="RoyalGhost">3 RoyalGhost<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/skeleton_horde.png"><input type="checkbox" class="cards" value="SkeletonArmy">3 SkeletonArmy<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/bomber.png"><input type="checkbox" class="cards" value="Bomber">3 Bomber<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/heal.png"><input type="checkbox" class="cards" value="Heal">3 Heal<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/archers.png"><input type="checkbox" class="cards" value="Archers">3 Archers<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/copy.png"><input type="checkbox" class="cards" value="Clone">3 Clone<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/earthquake.png"><input type="checkbox" class="cards" value="Earthquake">3 Earthquake<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/wallbreaker.png"><input type="checkbox" class="cards" value="WallBreakers">3 WallBreakers<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/tornado.png"><input type="checkbox" class="cards" value="Tornado">3 Tornado<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/goblin_barrel.png"><input type="checkbox" class="cards" value="GoblinBarrel">3 GoblinBarrel<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/minion.png"><input type="checkbox" class="cards" value="Minions">3 Minions<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/order_volley.png"><input type="checkbox" class="cards" value="Arrows">3 Arrows<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/ice_wizard.png"><input type="checkbox" class="cards" value="IceWizard">3 IceWizard<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/tombstone.png"><input type="checkbox" class="cards" value="Tombstone">3 Tombstone<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/skeleton_warriors.png"><input type="checkbox" class="cards" value="Guards">3 Guards<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/princess.png"><input type="checkbox" class="cards" value="Princess">3 Princess<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/skeleton_balloon.png"><input type="checkbox" class="cards" value="SkeletonBarrel">3 SkeletonBarrel<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/bandit.png"><input type="checkbox" class="cards" value="Bandit">3 Bandit<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/goblin_gang.png"><input type="checkbox" class="cards" value="GoblinGang">3 GoblinGang<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/blowdart_goblin.png"><input type="checkbox" class="cards" value="DartGoblin">3 DartGoblin<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/miner.png"><input type="checkbox" class="cards" value="Miner">3 Miner<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/mega_minion.png"><input type="checkbox" class="cards" value="MegaMinion">3 MegaMinion<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/valkyrie.png"><input type="checkbox" class="cards" value="Valkyrie">4 Valkyrie<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/rage_barbarian.png"><input type="checkbox" class="cards" value="Lumberjack">4 Lumberjack<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/battle_ram.png"><input type="checkbox" class="cards" value="BattleRam">4 BattleRam<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/inferno_dragon.png"><input type="checkbox" class="cards" value="InfernoDragon">4 InfernoDragon<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/baby_dragon.png"><input type="checkbox" class="cards" value="BabyDragon">4 BabyDragon<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/hog_rider.png"><input type="checkbox" class="cards" value="HogRider">4 HogRider<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/fire_fireball.png"><input type="checkbox" class="cards" value="Fireball">4 Fireball<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/musketeer.png"><input type="checkbox" class="cards" value="Musketeer">4 Musketeer<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/mini_pekka.png"><input type="checkbox" class="cards" value="MiniPEKKA">4 MiniPEKKA<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/poison.png"><input type="checkbox" class="cards" value="Poison">4 Poison<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/electro_wizard.png"><input type="checkbox" class="cards" value="ElectroWizard">4 ElectroWizard<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/freeze.png"><input type="checkbox" class="cards" value="Freeze">4 Freeze<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/hunter.png"><input type="checkbox" class="cards" value="Hunter">4 Hunter<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/firespirit_hut.png"><input type="checkbox" class="cards" value="Furnace">4 Furnace<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/building_tesla.png"><input type="checkbox" class="cards" value="Tesla">4 Tesla<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/bomb_tower.png"><input type="checkbox" class="cards" value="BombTower">4 BombTower<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/dark_witch.png"><input type="checkbox" class="cards" value="NightWitch">4 NightWitch<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/building_mortar.png"><input type="checkbox" class="cards" value="Mortar">4 Mortar<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/magic_archer.png"><input type="checkbox" class="cards" value="MagicArcher">4 MagicArcher<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/zappies.png"><input type="checkbox" class="cards" value="Zappies">4 Zappies<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/flying_machine.png"><input type="checkbox" class="cards" value="FlyingMachine">4 FlyingMachine<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/dark_prince.png"><input type="checkbox" class="cards" value="DarkPrince">4 DarkPrince<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/fire_furnace.png"><input type="checkbox" class="cards" value="GoblinHut">5 GoblinHut<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/cannon_cart.png"><input type="checkbox" class="cards" value="CannonCart">5 CannonCart<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/rascals.png"><input type="checkbox" class="cards" value="Rascals">5 Rascals<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/royal_hog.png"><input type="checkbox" class="cards" value="RoyalHogs">5 RoyalHogs<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/bowler.png"><input type="checkbox" class="cards" value="Bowler">5 Bowler<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/chr_balloon.png"><input type="checkbox" class="cards" value="Balloon">5 Balloon<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/building_inferno.png"><input type="checkbox" class="cards" value="InfernoTower">5 InfernoTower<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/minion_horde.png"><input type="checkbox" class="cards" value="MinionHorde">5 MinionHorde<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/barbarians.png"><input type="checkbox" class="cards" value="Barbarians">5 Barbarians<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/giant.png"><input type="checkbox" class="cards" value="Giant">5 Giant<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/graveyard.png"><input type="checkbox" class="cards" value="Graveyard">5 Graveyard<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/chr_witch.png"><input type="checkbox" class="cards" value="Witch">5 Witch<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/wizard.png"><input type="checkbox" class="cards" value="Wizard">5 Wizard<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/prince.png"><input type="checkbox" class="cards" value="Prince">5 Prince<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/ram_rider.png"><input type="checkbox" class="cards" value="RamRider">5 RamRider<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/executioner.png"><input type="checkbox" class="cards" value="Executioner">5 Executioner<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/electro_dragon.png"><input type="checkbox" class="cards" value="ElectroDragon">5 ElectroDragon<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/goblin_giant.png"><input type="checkbox" class="cards" value="GoblinGiant">6 GoblinGiant<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/building_elixir_collector.png"><input type="checkbox" class="cards" value="ElixirCollector">6 ElixirCollector<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/building_xbow.png"><input type="checkbox" class="cards" value="XBow">6 XBow<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/royal_giant.png"><input type="checkbox" class="cards" value="RoyalGiant">6 RoyalGiant<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/giant_skeleton.png"><input type="checkbox" class="cards" value="GiantSkeleton">6 GiantSkeleton<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/rocket.png"><input type="checkbox" class="cards" value="Rocket">6 Rocket<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/angry_barbarian.png"><input type="checkbox" class="cards" value="EliteBarbarians">6 EliteBarbarians<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/lightning.png"><input type="checkbox" class="cards" value="Lightning">6 Lightning<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/zapMachine.png"><input type="checkbox" class="cards" value="Sparky">6 Sparky<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/mega_knight.png"><input type="checkbox" class="cards" value="MegaKnight">7 MegaKnight<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/barbarian_hut.png"><input type="checkbox" class="cards" value="BarbarianHut">7 BarbarianHut<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/pekka.png"><input type="checkbox" class="cards" value="PEKKA">7 PEKKA<br></span>
+        <span class="legendary"><img src="https://statsroyale.com/images/cards/full/lava_hound.png"><input type="checkbox" class="cards" value="LavaHound">7 LavaHound<br></span>
+        <span class="common"><img src="https://statsroyale.com/images/cards/full/royal_recruits.png"><input type="checkbox" class="cards" value="RoyalRecruits">8 RoyalRecruits<br></span>
+        <span class="epic"><img src="https://statsroyale.com/images/cards/full/chr_golem.png"><input type="checkbox" class="cards" value="Golem">8 Golem<br></span>
+        <span class="rare"><img src="https://statsroyale.com/images/cards/full/three_musketeers.png"><input type="checkbox" class="cards" value="ThreeMusketeers">9 ThreeMusketeers<br></span>
+        <button onclick="processCards()">Redirect</button>
+        <script src="logic.js"></script>
+    </body>
+</html>
