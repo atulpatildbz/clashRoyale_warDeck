@@ -84,13 +84,19 @@ var cards = {Knight:26000000,
 	Tornado:28000012,
 	Clone:28000013,
 	BarbarianBarrel:28000015,
-	Heal:28000016,
+	HealSpirit:28000016,
     GiantSnowball:28000017,
 	GoblinGiant:26000060,
 	ElectroDragon:26000063,
 	RamRider:26000051,
 	Earthquake:28000014,
-	WallBreakers:26000058};
+	WallBreakers:26000058,
+	BattleHealer:26000068,
+	RoyalDelivery:28000018,
+	ElixirGolem:26000067,
+	Fisherman:26000061,
+	GoblinCage:27000012,
+};
     
 function processCards(){
     allArray = document.getElementsByClassName('cards');
